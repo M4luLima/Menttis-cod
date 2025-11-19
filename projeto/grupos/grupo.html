@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../inicial/img/logo2.png" type="image/x-icon"></head>   
+    <title>Menttis - Detalhes do Grupo</title>
+    <link rel="stylesheet" href="grupo.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<body>
+    
+    <input type="checkbox" id="menulat">
+    
+    <header class="navbar">
+        <div class="icons">
+            <label for="menulat" class="menulat">☰</label>
+            <img src="../inicial/img/sino.png" alt="sino" class="noti">
+            <img src="../inicial/img/logo2.png" alt="menttis" class="imglogo">
+            <div class="logo">Menttis</div>
+        </div>
+        <div class="caixa-pesquisa">
+            <img src="../inicial/img/lupa.png" class="icone-lupa" alt="lupa">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+    </header>
+
+    <nav class="menulateral">
+         <div class="topo-menu">
+            <img src="../inicial/img/logo2.png" class="logomen">
+            <h2 class="nomemenu">Menttis</h2>
+        </div>
+        <ul>
+            <li><img src="../inicial/img/juntar.png" class="icones"><a href="../grupos/juntargrupos.html"> Juntar ao grupo </a></li>
+            <li><img src="../inicial/img/criar.png" class="icones"> Criar grupo</li>
+            <li><img src="../inicial/img/config.png" class="icones"><a href="../menu lateral/config.html"> Configurações</a></li>
+            <li><img src="../inicial/img/ajuda.png" class="icones"><a href="../menu lateral/ajuda.html"> Ajuda & feedback</a></li>
+            <li><img src="../inicial/img/casa.png" class="icones"><a href="../inicial/tela.html"> Início</a></li>
+        </ul>
+        <button class="logout"><img src="../inicial/img/sair.png" class="icones"> Sair</button>
+    </nav>
+
+    <main class="content-container two-columns">
+        
+        <section class="group-details">
+            <div class="group-image-lg">
+                <i class='bx bx-image-alt'></i>
+            </div>
+            
+            <h2 class="group-name-title">Nome grupo</h2>
+            <p class="group-description">Descrição</p>
+            
+            <a href="#" class="group-link">Link do grupo</a>
+            
+            <button class="start-study-btn">Iniciar estudo</button>
+        </section>
+
+        <section class="group-sidebar-container">
+            <div class="sidebar-content active" id="integrantes-content">
+                <h3 class="sidebar-title">Integrantes</h3>
+                <div class="member-list">
+                    <div class="member-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span>Aluno 1</span>
+                    </div>
+                    <div class="member-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span>Aluno 2</span>
+                    </div>
+                    <div class="member-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span>Aluno 3</span>
+                    </div>
+                    <div class="member-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span>Aluno 4</span>
+                    </div>
+                </div>
+                <button class="toggle-btn yellow-btn" data-target="ranking-content">Ranking</button>
+            </div>
+
+            <div class="sidebar-content" id="ranking-content">
+                <h3 class="sidebar-title">Ranking</h3>
+                <div class="ranking-list">
+                    <div class="ranking-item first-place">
+                        <span class="rank-text">1° Lugar</span>
+                        <span class="rank-xp">00XP</span>
+                    </div>
+                    <div class="ranking-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span class="rank-text">2° Lugar</span>
+                        <span class="rank-xp">00XP</span>
+                    </div>
+                    <div class="ranking-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span class="rank-text">3° Lugar</span>
+                        <span class="rank-xp">00XP</span>
+                    </div>
+                    <div class="ranking-item">
+                        <i class='bx bxs-user-circle'></i>
+                        <span class="rank-text">4° Lugar</span>
+                        <span class="rank-xp">00XP</span>
+                    </div>
+                </div>
+                <button class="toggle-btn blue-btn" data-target="integrantes-content">Integrantes</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="tela3.js"></script>
+</body>
+</html>
